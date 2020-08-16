@@ -39,7 +39,7 @@ a {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
+  margin-left: 15%;
   align-items: center;
 }
 
@@ -55,7 +55,42 @@ a {
 
 .container {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   background-color: darkgray;
+  min-height: 400px;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Helvetica", "Arial", "Sans-Serif";
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+ul.posts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 40px;
+  font-size: 1.1em;
+}
+
+ul.posts li {
+  list-style: none;
+  flex: 1 0 21%; /* explanation below */
+  margin: 10px;
+  background-color: blue;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
 }
