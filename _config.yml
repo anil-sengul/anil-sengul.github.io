@@ -3,3 +3,8 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
 theme: jekyll-theme-modernist
+gems:
+  - jekyll-paginate
+
+paginate_path: "/blog/page:num/"
+paginate: 100
