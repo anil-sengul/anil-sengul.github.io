@@ -1,10 +1,10 @@
 name: T. Anil Sengül, A participant of PowerCoders
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /menu/blog/:year/:month/:day/:title
 
 theme: jekyll-theme-modernist
-gems:
-  - jekyll-paginate
+#gems:
+#  - jekyll-paginate
 
-paginate_path: "/blog/page:num/"
-paginate: 100
+#paginate_path: "/blog/page:num/"
+#paginate: 100
