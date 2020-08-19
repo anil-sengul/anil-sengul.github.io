@@ -2,7 +2,7 @@
 layout: post
 title: "Practicing typing"
 date: 2020-08-14
-#image: /assets/2020-08-08-setting-up-pc.png
+image: /assets/2020-08-14-practicing-typing.png
 tags: Typing
 ---
 

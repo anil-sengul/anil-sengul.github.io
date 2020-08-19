@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Publishing my Blog"
+title: "Publishing my blog"
 date: 2020-08-17
-#image: /assets/2020-08-08-setting-up-pc.png
+image: /assets/2020-08-17-publishing-my-blog.png
 tags: Blog
 ---
 

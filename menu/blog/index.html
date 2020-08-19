@@ -6,10 +6,16 @@ layout: default
 <ul class="posts">
   {% for post in site.posts reversed%}
   <li>
-    <div class="summary-post">
-      <p>{{ post.date | date_to_string }}</p>
-      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </div>
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      <div
+        class="summary-image-container"
+        style="background-image: url({{post.image}});"
+      ></div>
+      <div class="summary-title-container">
+        <p>{{ post.date | date_to_string }}</p>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </div>
+    </a>
   </li>
   {% endfor %}
 </ul>

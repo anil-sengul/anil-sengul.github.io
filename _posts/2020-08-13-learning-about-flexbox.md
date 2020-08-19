@@ -2,7 +2,7 @@
 layout: post
 title: "Learning flexbox"
 date: 2020-08-13
-#image: /assets/2020-08-08-setting-up-pc.png
+image: /assets/2020-08-13-learning-about-flexbox.png
 tags: Flexbox
 ---
 

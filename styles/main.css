@@ -19,13 +19,20 @@ nav {
   width: 100%;
 }
 
-a {
+nav a,
+footer a {
+  display: block;
   color: white;
   text-decoration: none;
+  padding: 0.375em 0.375em;
 }
 
 .menu {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  align-items: center;
 }
 
 .item {
@@ -36,44 +43,27 @@ a {
   color: #ccc;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 15%;
-  align-items: center;
-}
-
 .logo {
   font-size: 1.25em;
   padding: 0.5em 0.625em 0.5em 0;
 }
 
-.menu li a {
-  display: block;
-  padding: 0.375em 0.375em;
-}
-
 .container {
-  display: flex;
-  width: 70%;
   margin: 0 auto;
+  width: 70%;
   background-color: darkgray;
+  /* display: flex; */
   height: 75vh;
   overflow-y: auto;
 }
 
 h1 {
-  padding: 1%;
-  margin: 2%;
+  /* padding: 1%;*/
+  text-indent: 1.25em;
+  margin-top: 2%;
+  /* margin: 2%; */
   font-size: 1.7em;
   font-family: "Helvetica", "Arial", "Sans-Serif";
-}
-
-.home-p {
-  text-indent: 1.25em;
-  font-size: 1.1em;
-  line-height: 1.4em;
-  color: #333;
 }
 
 p {
@@ -97,23 +87,48 @@ ul.posts li {
   height: 30%;
   list-style: none;
   margin: 2%;
-  background-color: darkolivegreen;
+  /* background-color: darkolivegreen; */
 }
 
-.summary-post {
+.summary-image-container {
   min-height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  min-height: 16vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.images {
+.summary-title-container {
+  min-height: 100%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.images img {
-  width: 20%;
-  padding: 0.625em;
-  margin: 0.625em;
+.summary-title-container p {
+  padding: 0;
+  margin: 0;
+  text-indent: 0;
+}
+
+.summary-title-container a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+}
+
+.post-image-container {
+  text-align: center;
+}
+
+.post-image-container img {
+  margin-top: 2%;
+  width: 30%;
 }

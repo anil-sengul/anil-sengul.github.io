@@ -2,7 +2,7 @@
 layout: post
 title: "Creating a blog"
 date: 2020-08-11
-#image: /assets/2020-08-08-setting-up-pc.png
+image: /assets/2020-08-11-creating-a-blog.png
 tags: Github-Pages Blog
 ---
 

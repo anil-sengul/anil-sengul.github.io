@@ -2,7 +2,7 @@
 layout: post
 title: "Setting up my PC"
 date: 2020-08-10
-#image: /assets/2020-08-08-setting-up-pc.png
+image: /assets/2020-08-10-setting-up-pc.png
 tags: VSC
 ---
 
