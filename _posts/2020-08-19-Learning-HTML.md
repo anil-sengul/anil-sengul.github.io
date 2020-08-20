@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Lerning HTML"
+title: "Learning HTML"
 date: 2020-08-19
-image: /assets/2020-08-19-Leraning-HTML.jpg
+image: /assets/2020-08-19-Learning-HTML.jpg
 tags: Blog
 ---
 
