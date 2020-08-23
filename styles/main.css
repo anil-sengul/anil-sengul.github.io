@@ -10,7 +10,7 @@ body {
   background-color: #222;
 }
 
-nav {
+header {
   background: #222;
   padding: 0 0.938em;
   overflow: hidden;
@@ -19,27 +19,32 @@ nav {
   width: 100%;
 }
 
+nav ul,
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  align-items: center;
+  margin-right: 15%;
+}
+
+nav ul li,
+footer ul li {
+  padding: 0.625em;
+}
+
 nav a,
-footer a {
+footer a,
+span a {
   display: block;
   color: white;
   text-decoration: none;
   padding: 0.375em 0.375em;
 }
 
-.menu {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 15%;
-  align-items: center;
-}
-
-.item {
-  padding: 10px;
-}
-
-.item a:hover {
+li a:hover,
+span a:hover {
   color: #ccc;
 }
 
@@ -48,12 +53,26 @@ footer a {
   padding: 0.5em 0.625em 0.5em 0;
 }
 
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 5%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
-  margin: 0 auto;
   width: 70%;
   background-color: darkgray;
   /* display: flex; */
-  height: 85vh;
+  height: 80vh;
   overflow-y: auto;
 }
 
@@ -77,21 +96,18 @@ p {
 ul.posts {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 2% 4%;
   font-size: 1.1em;
 }
 
 ul.posts li {
-  /* flex: 1 0 21%; */
-  width: 20%;
-  height: 30%;
+  width: 160px;
   list-style: none;
   margin: 2%;
-  /* background-color: darkolivegreen; */
 }
 
 .summary-image-container {
-  min-height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -104,17 +120,11 @@ ul.posts li {
   position: relative;
 }
 
-.summary-image-container img {
-  width: 50%;
-  height: auto;
-}
-
 .summary-title-container {
-  min-height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .summary-title-container p {
@@ -135,8 +145,8 @@ ul.posts li {
 }
 
 .post-image-container img {
-  margin-top: 2%;
   width: 30%;
+  margin-top: 2%;
 }
 
 .disable-scrollbars::-webkit-scrollbar {
@@ -147,4 +157,15 @@ ul.posts li {
 .disable-scrollbars {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
+}
+
+.arrow-active,
+.arrow-pasive {
+  color: white;
+  font-size: 4em;
+}
+
+.white {
+  color: white;
+  margin-left: auto;
 }

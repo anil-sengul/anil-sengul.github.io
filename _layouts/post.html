@@ -3,15 +3,19 @@ layout: default
 image: { { page.image } }
 ---
 
-<article class="post-container">
-  <div class="post-image-container">
-    {% if page.image %}
-    <!-- <img src="{{ page.image }}" alt="{{ page.title }}" /> -->
-    {% endif %}
-  </div>
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
-  <div class="post">
-    {{ content }}
-  </div>
-</article>
+<section class="post-container">
+  <article>
+    <div class="post-image-container">
+      {% if page.image %}
+      <img src="{{ page.image }}" alt="{{ page.title }}" />
+      {% endif %}
+    </div>
+    <div class="post-content-container">
+      <h1>{{ page.title }}</h1>
+      <p class="meta">{{ page.date | date_to_string }}</p>
+      <div class="post">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+</section>
