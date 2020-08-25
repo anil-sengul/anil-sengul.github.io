@@ -3,19 +3,19 @@ layout: default
 image: { { page.image } }
 ---
 
-<section class="post-container">
-  <article>
+<section>
+  <article class="post-container">
     <div class="post-image-container">
       {% if page.image %}
       <img src="{{ page.image }}" alt="{{ page.title }}" />
       {% endif %}
     </div>
-    <div class="post-content-container">
+    <div class="post-title-container">
       <h1>{{ page.title }}</h1>
       <p class="meta">{{ page.date | date_to_string }}</p>
-      <div class="post">
-        {{ content }}
-      </div>
+    </div>
+    <div class="post-content-container">
+      {{ content }}
     </div>
   </article>
 </section>
