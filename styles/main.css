@@ -12,7 +12,7 @@ body {
 
 header {
   background: #222;
-  padding: 0 0.938em;
+  padding: 0 0.7vw;
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -24,9 +24,9 @@ footer ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 15%;
+  margin-left: 15vw;
   align-items: center;
-  margin-right: 15%;
+  margin-right: 15vw;
 }
 
 nav ul li,

@@ -6,4 +6,4 @@ image: /assets/2020-08-24-html-css-and-js-for-web-developers.png
 tags: Html Css Js
 ---
 
-Today, I have started to watch videos of "Html, Css & Javascript for web developers" course from Coursera platform. I have comleted watching all videos of module 1. I am planning to complete the module 2 tomorrow.
+Today, I have started to watch videos of "Html, CSS & Javascript for web developers" course from the Coursera platform. I have completed watching all videos of module 1. I am planning to complete the module 2 tomorrow.
