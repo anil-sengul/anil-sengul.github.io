@@ -1,11 +1,93 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: darkgray 1px solid; */
+  color: wheat;
 }
 
-.myDiv {
-  width: 400px;
-  height: 300px;
-  padding: 8px;
-  margin: 0 30px;
-  border: black 1px solid;
+body {
+  font-family: sans-serif;
+  font-size: 1.1vw;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: darkgray;
+}
+
+header {
+  background-color: #222;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 20vw;
+  max-width: 20vw;
+  height: 100vh;
+  padding: 0.7vh 0.7vw;
+  align-items: center;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+header img {
+  margin-top: 5vh;
+}
+
+header h1 {
+  margin: 1vh auto 3vh auto;
+}
+
+header p {
+  margin: 1vh auto 3vh auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+
+nav li {
+  list-style: none;
+  font-size: 1.7em;
+  border-bottom: 1px wheat solid;
+  margin-bottom: 2vh;
+  text-align: center;
+  line-height: 5vh;
+  padding-bottom: 2vh;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: darkslategrey;
+}
+
+article {
+  width: 39.2vw;
+  height: 48vh;
+
+  margin: 0.3vh 0.3vh 0.3vh 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  color: white;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

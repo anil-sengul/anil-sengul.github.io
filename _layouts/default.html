@@ -4,13 +4,29 @@
     <title>{{ page.title }}</title>
     <!-- link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <img
+        id="pic-profile"
+        src="/assets/CV-AnilPic2.png"
+        alt="Profile Picture"
+        width="100vw"
+        srcset=""
+      />
+      <h1 id="logo"><a href="/">Anil's Blog</a></h1>
+      <hr />
+      <p id="summary">Thoughts..</p>
+      <hr />
       <nav>
         <ul>
-          <li class="logo"><a href="/">Anil's Blog</a></li>
           <li><a href="/menu/blog">Blog</a></li>
+          <li><a href="/menu/blog">About</a></li>
+          <li><a href="/menu/blog">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -26,9 +42,22 @@
         <span class="arrow-pasive">&lt;</span>
         {% endif %}
       </aside>-->
-      <div class="container disable-scrollbars">
+      <section class="container disable-scrollbars">
         {{ content }}
-      </div>
+        <footer>
+          <ul>
+            <li><a href="anil.sengul@powercoders.org">Github: </a></li>
+            <li>
+              <a href="https://github.com/anil-sengul"
+                >github.com/anil-sengul</a
+              >
+            </li>
+            <!-- <li class="white">
+            Page: {{ paginator.page }} of {{ paginator.total_pages }}
+          </li> -->
+          </ul>
+        </footer>
+      </section>
       <!-- <aside id="aside-right">
         {% if paginator.next_page %}
         <span class="arrow-active">
@@ -41,16 +70,5 @@
         {% endif %}
       </aside> -->
     </main>
-    <footer>
-      <ul>
-        <li><a href="anil.sengul@powercoders.org">Github: </a></li>
-        <li>
-          <a href="https://github.com/anil-sengul">github.com/anil-sengul</a>
-        </li>
-        <!-- <li class="white">
-          Page: {{ paginator.page }} of {{ paginator.total_pages }}
-        </li> -->
-      </ul>
-    </footer>
   </body>
 </html>
